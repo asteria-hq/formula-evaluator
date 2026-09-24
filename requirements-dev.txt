@@ -1,0 +1,5 @@
+# Test-only deps for the formula-evaluator container. Kept out of
+# requirements.txt so the image ships neither pytest nor xlsxwriter.
+pytest==9.1.1
+httpx==0.28.1
+xlsxwriter==3.2.9

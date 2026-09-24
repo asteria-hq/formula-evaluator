@@ -1,0 +1,58 @@
+NOTICE — formula-evaluator
+==========================
+
+This service embeds and provides network access to `formulas`, a spreadsheet
+formula engine licensed under the European Union Public Licence (EUPL) v. 1.1 or
+later. Asteria Labs elects EUPL v. 1.2 for this distribution; its full text is in
+LICENCE.EUPL-1.2.txt alongside this file.
+
+
+The Work
+--------
+
+  Name:      formulas
+  Version:   1.3.4
+  Licence:   EUPL-1.1+ (EUPL-1.2 elected here)
+  Upstream:  https://github.com/vinci1it2000/formulas
+  Copyright: © 2016-2025 European Commission (JRC) and the formulas authors
+
+`formulas` is included **unmodified**, installed from PyPI at the version pinned
+in requirements.txt. Its source is publicly available at the upstream repository
+above, which is the repository indicated for the purposes of EUPL 1.2 Article 5
+("Provision of Source Code").
+
+
+Derivative Work
+---------------
+
+The following files are original to Asteria Labs and call into `formulas`
+directly. Because the derivative-work boundary is left by EUPL Article 1 to
+national copyright law rather than settled by the licence, they are treated as a
+Derivative Work rather than argued over, and are therefore offered under the
+EUPL v. 1.2:
+
+  evaluate.py   formula scanning, cell-key mapping and evaluation
+  runner.py     child-process execution with a wall-clock timeout
+  app.py        HTTP surface
+
+  Copyright © 2026 Asteria Labs.
+
+  Source:    https://github.com/asteria-hq/formula-evaluator
+             This is the repository indicated for these files for the purposes of
+             EUPL 1.2 Article 5 ("Provision of Source Code").
+
+  Modification notice (EUPL 1.2 Art. 5): these files are new work written
+  against the `formulas` public API; no file of the Work itself has been
+  modified.
+
+No other software is a Derivative Work of `formulas`: the engine is imported by
+`evaluate.py` and by nothing else, and every other caller reaches this service
+over HTTP.
+
+
+Warranty and liability
+----------------------
+
+The Work is provided WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, and without
+liability, to the extent permitted by applicable law. See Articles 7 and 8 of the
+Licence.
