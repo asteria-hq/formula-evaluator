@@ -14,7 +14,7 @@ Two capabilities on one engine:
 EUPL Article 1 leaves *what counts as a Derivative Work* to national copyright law rather than settling it. That question is unresolvable without counsel, so this design makes the answer not matter:
 
 - The engine is imported by **`evaluate.py` and nothing else**, in an image that holds no storage credentials and no database handle.
-- Worst case — the wrapper is a Derivative Work — costs the source of a few hundred lines of glue, which `NOTICE` already offers under EUPL 1.2.
+- Worst case — the wrapper is a Derivative Work — costs the source of a few hundred lines of glue, which `NOTICE` offers under EUPL 1.2 and which is published at <https://github.com/asteria-hq/formula-evaluator>.
 - Anything else is out of scope under any reading, because it reaches this service only over HTTP.
 
 This bounds the blast radius; it does **not** remove the Article 5 trigger. What Article 5 then requires is the Work (unmodified, already public — `NOTICE` indicates the upstream repository) plus any Derivative Work.
